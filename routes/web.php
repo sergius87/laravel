@@ -11,13 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/pricing', function () {
-    return view('pricing');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
