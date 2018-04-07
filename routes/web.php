@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/', function() {
+	return view ('home');
+});
+
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
