@@ -3,9 +3,10 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Unify - Responsive Website Template</title>
+    <title><?php echo base_path() ?></title>
 
     <!-- Meta -->
+    <meta robots="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -18,26 +19,26 @@
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="{{asset('/assets/plugins/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/css/style.css')}}">
+    <link rel="stylesheet" href="/public/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/assets/css/style.css">
 
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="{{asset('/assets/css/headers/header-default.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/css/footers/footer-v1.css')}}">
+    <link rel="stylesheet" href="/public/assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="/public/assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('/assets/plugins/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/plugins/line-icons/line-icons.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/plugins/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/plugins/parallax-slider/css/parallax-slider.css')}}">
-    <link rel="stylesheet" href="{{asset('/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css')}}">
+    <link rel="stylesheet" href="/public/assets/plugins/animate.css">
+    <link rel="stylesheet" href="/public/assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="/public/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="/public/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="{{asset('/assets/css/theme-colors/default.css')}}" id="style_color">
-    <link rel="stylesheet" href="{{asset('/assets/css/theme-skins/dark.css')}}">
+    <link rel="stylesheet" href="/public/assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="/public/assets/css/theme-skins/dark.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="{{asset('/assets/css/custom.css')}}">
+    <link rel="stylesheet" href="/public/assets/css/custom.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="logo" href="{{ URL::route('home') }}">
-                    <img src="{{asset('/assets/img/logo1-default.png')}}" alt="Logo">
+                    <img src="/public/assets/img/logo1-default.png" alt="Logo">
                 </a>
                 <!-- End Logo -->
 
@@ -831,7 +832,7 @@
                     <div class="row">
                         <!-- About -->
                         <div class="col-md-3 md-margin-bottom-40">
-                            <a href="index.html"><img id="logo-footer" class="footer-logo" src="{{asset('/assets/img/logo2-default.png')}}" alt=""></a>
+                            <a href="index.html"><img id="logo-footer" class="footer-logo" src="/public/assets/img/logo2-default.png" alt=""></a>
                             <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
                             <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
                         </div><!--/col-md-3-->
@@ -949,22 +950,22 @@
     
 
     <!-- JS Global Compulsory -->
-    <script type="text/javascript" src="{{asset('/assets/plugins/jquery/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/jquery/jquery-migrate.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="/public/assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="{{asset('/assets/plugins/back-to-top.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/smoothScroll.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/parallax-slider/js/modernizr.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/parallax-slider/js/jquery.cslider.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')}}"></script>
+    <script type="text/javascript" src="/public/assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/parallax-slider/js/modernizr.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="/public/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
     <!-- JS Customization -->
-    <script type="text/javascript" src="{{asset('/assets/js/custom.js')}}"></script>
+    <script type="text/javascript" src="/public/assets/js/custom.js"></script>
     <!-- JS Page Level -->
-    <script type="text/javascript" src="{{asset('/assets/js/app.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/js/plugins/owl-carousel.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/js/plugins/style-switcher.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/js/plugins/parallax-slider.js')}}"></script>
+    <script type="text/javascript" src="/public/assets/js/app.js"></script>
+    <script type="text/javascript" src="/public/assets/js/plugins/owl-carousel.js"></script>
+    <script type="text/javascript" src="/public/assets/js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="/public/assets/js/plugins/parallax-slider.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();
