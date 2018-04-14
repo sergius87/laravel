@@ -18,3 +18,7 @@ Route::get('/', function() {
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::group(['prefix' => 'articles'], function(){
+	Route::get('view/{id}', 'TestController@view')->name('articlesView');
+});
