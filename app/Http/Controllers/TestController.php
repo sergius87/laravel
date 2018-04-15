@@ -8,7 +8,12 @@ use App\Article;
 class TestController extends Controller
 {
     public function view($id){
-    	$aricle = Article::find($id);
-    	dd($article);
+    	$article = Article::find($id);
+    	
+    	$article->category;
+    	$article->user;
+    	$article->tags;
+
+    	return view('test.index', ['article' => $article]);
     }
 }

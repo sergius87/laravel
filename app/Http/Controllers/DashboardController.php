@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class DashboardController extends Controller
 {
@@ -23,6 +24,14 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $users = User::orderBy('id', 'ASC')->paginate(5);
+        return view('dashboard')->with('users', $users);
+    }
+
+        public function destroy($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        return redirect('dashboard');
     }
 }

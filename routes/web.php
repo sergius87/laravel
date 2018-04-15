@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
+Route::get('/{id}/destroy', 'DashboardController@destroy')->name('destroy');
+
 Route::group(['prefix' => 'articles'], function(){
+
 	Route::get('view/{id}', 'TestController@view')->name('articlesView');
+	
 });
