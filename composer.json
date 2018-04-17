@@ -10,7 +10,8 @@
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "twbs/bootstrap": "4.0.0"
+        "twbs/bootstrap": "4.0.0",
+        "vluzrmos/collective-html": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
