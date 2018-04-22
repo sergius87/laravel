@@ -23,7 +23,7 @@ class TagsController extends Controller
     	$tag = new Tag;
     	$tag->name = $request->name;
     	$tag->save();
-    	return redirect()->route('tags.create');
+    	return redirect()->route('tags.index');
     }
 
     public function index()
