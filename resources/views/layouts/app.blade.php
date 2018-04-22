@@ -131,10 +131,12 @@
                             <i class="search fa fa-search search-btn"></i>
                             <div class="search-open">
                                 <div class="input-group animated fadeInDown">
-                                    <input type="text" class="form-control" placeholder="Search">
+                                    <form method="GET" action="{{ route('tags.index') }}">
+                                    <input id="name" type="text" class="form-control" name="name" placeholder="Search tags">
                                     <span class="input-group-btn">
-                                        <button class="btn-u" type="button">Go</button>
+                                        <button class="btn-u" type="submit">Go</button>
                                     </span>
+                                    </form>
                                 </div>
                             </div>
                         </li>
