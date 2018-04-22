@@ -25,8 +25,15 @@ Route::get('{id}/edit', 'DashboardController@edit')->name('edit');
 
 Route::put('{id}/edit', 'DashboardController@update')->name('update');
 
+Route::get('/categories/create','CategoriesController@create')->name('categories.create');
+
+Route::post('/categories/create', 'CategoriesController@store')->name('categories.store');
+
+Route::get('/categories/{id}/destroy', 'CategoriesController@destroy')->name('categories.destroy');
+
 Route::group(['prefix' => 'articles'], function(){
 
 	Route::get('view/{id}', 'TestController@view')->name('articlesView');
+
 	
 });

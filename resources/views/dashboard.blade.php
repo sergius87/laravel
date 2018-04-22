@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">All Users</div>
 
                 <div class="panel-body">
                     <table class="table table-striped">
@@ -14,7 +14,7 @@
                         <th>Name</th>
                         <th>ID</th>
                         <th>Email</th>
-                        <th>Action</th>
+                        <th>Delete/Edit</th>
                       </tr>
                     </thead>
                     <tbody>
