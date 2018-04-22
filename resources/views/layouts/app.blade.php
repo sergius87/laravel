@@ -107,9 +107,21 @@
 
                         <li class="dropdown active">
                             <a href="{{ URL::route('categories.create') }}" class="dropdown-toggle">
-                                Create new category
+                                New category
                             </a>
                         </li>
+                        <li class="dropdown active">
+                            <a href="{{ URL::route('tags.create') }}" class="dropdown-toggle">
+                                New tag
+                            </a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="{{ URL::route('tags.index') }}" class="dropdown-toggle">
+                                See tags
+                            </a>
+                        </li>
+
+
                         <!-- End Home -->
 
                         

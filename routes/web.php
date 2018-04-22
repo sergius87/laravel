@@ -17,6 +17,12 @@ Route::get('/', function() {
 
 Auth::routes();
 
+Route::resource('tags', 'TagsController');
+Route::get('tags/{id}/destroy', [
+	'uses' => 'TagsController@destroy',
+	'as' => 'tags.destroy'
+]);
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 Route::get('/{id}/destroy', 'DashboardController@destroy')->name('destroy');
